@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-blue-950">
+        <!-- /* mx-auto banne side thi margin same aapva*/
+        /* items vertical axes na center ma place karava items-center */
+        /* items ni vachhe equal spacing mate: justify-between */  -->
+           <div class="relative w-[1080px] mx-auto flex items-center justify-between">
+
+           <!-- logo -->
+           <a href="/" class="cursor-pointer py-7 pr-7">
+            <img 
+            src="https://th.bing.com/th/id/OIP._PqyNynFcdKr4uiIVLs2PQAAAA?rs=1&pid=ImgDetMain"
+            width="125px"
+             height="30px" >
+           </a>     
+
+           <ul class="flex space-x-6">
+            <!-- parent ni state par child element depend kare to "group" vali class ka use kar sakte hai -->
+            <!-- aama payment(parent) par hover karu tyare nicheni line active thai jai che -->
+            <!-- hover pe opacity 1 kari dyo( group(parent)  ke hover pe)  -->
+            <!-- sidhu div par hover lagavshu to sidhu uper thi aavishu to nahi dekhai tethi group property use kari -->
+            <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                <a href="#">payment</a>
+              <!-- w-full: parent ni puri ki puri width le lega -->
+              <!-- absolute bottom-0: e under line -->
+                <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+
+            </li>
+
+
+            <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group ">
+                <a href="#">Banking</a>
+                <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+            </li>
+
+            <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group ">
+                <a href="#">Corporate Card</a>
+               
+            </li>
+
+            <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group ">
+                <a href="#">Payroll</a>
+                
+            </li>
+
+            <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group ">
+                <a href="#">Resources</a>
+                <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+            </li>
+
+            <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group ">
+                <a href="#">Support</a>
+                <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+            </li>
+
+            <li class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group ">
+                <a href="#">Pricing</a>
+                <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+            </li>
+      
+           </ul>
+
+           <div class="flex space-x-6 ">
+            <img src="indanflag.jpg" width="42px" height="10px" alt="">
+
+            <button class="py-3 px-5 font-mullish text-white border-lightBlue border rounded text-sm font-bold">Log in</button>
+
+            <button class="py-3 px-4 font-mullish border-lightBlue rounded text-sm font-bold bg-white text-lightBlue300 transition-all duration-200 hover:text-lightBlue500 ">Sign Up
+
+                
+            </button>
+
+
+           </div>
+
+
+
+
+           </div>
+    </nav>
+</body>
+</html>
