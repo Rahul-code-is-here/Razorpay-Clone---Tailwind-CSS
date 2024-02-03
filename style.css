@@ -25,3 +25,7 @@
     transform: scale(1.05);
     background-image: url('instant-settlement-bghover.svg');
 }
+
+#features{
+    background-image: url(core-features-sectionBg.svg);
+}
